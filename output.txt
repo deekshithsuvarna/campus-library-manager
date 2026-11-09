@@ -1,0 +1,33 @@
+CAMPUS LIBRARY MANAGER
+
+Borrowing items
+Alice borrowed: Book: Python 101 by A. Rao (ID 1)
+Could not borrow: 'Python 101' is already borrowed.
+Could not borrow: 'Python 101' is already borrowed.
+Bob borrowed: Magazine: Science Today, issue 12 (ID 2)
+Could not borrow: Bob has reached the borrow limit of 1.
+Alice borrowed: DVD: Planet Earth, 60 minutes (ID 3)
+Alice's borrowed titles: ['Python 101', 'Planet Earth']
+Bob's borrowed titles: ['Science Today']
+
+Late fees
+Book: Python 101 by A. Rao (ID 1) -> late fee for 3 days: Rs 6
+Magazine: Science Today, issue 12 (ID 2) -> late fee for 3 days: Rs 3
+DVD: Planet Earth, 60 minutes (ID 3) -> late fee for 3 days: Rs 15
+
+Returning items
+Could not return: Alice has not borrowed 'Science Today'.
+Alice returned Python 101. Late fee: Rs 6
+Alice returned Planet Earth on time. Late fee: Rs 0
+Bob returned Science Today. Late fee: Rs 3
+Alice's borrowed titles after returns: []
+Bob's borrowed titles after returns: []
+
+Encapsulation
+AttributeError: __available cannot be read directly.
+Book available using is_available(): True
+
+Abstract class
+TypeError: LibraryItem cannot be created because late_fee() is abstract.
+
+Total items created: 3
